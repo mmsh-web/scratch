@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Color+Emoji&family=Vazirmatn:wght@100..900&display=swap');
+
+* {
+    font-family: 'vazirmatn',"Noto Color Emoji"
+    ;text-decoration: none;
+}
+
+body {
+    background-color: aliceblue;
+    display: grid;
+    padding: 40px;
+}
+
+span{
+    border-width: 3px;
+    border-color: rgb(80, 80, 80)a0;
+    border-style: dashed;
+    background: #f5f5f5a0;
+    padding: 2px;
+    border-radius: 15px;
+    animation: xfadeIn 1s ease forwards;
+    
+}
+
+.card{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #505050a0;
+    background: #ffffffbd;
+
+    transition: all 0.3s ease-in-out;
+    animation: blurer 1s ;
+}
+
+.card:hover{
+    transform: translateX(5px);
+}
+
+.holder{
+    display: inline-block;
+    padding: 5px;
+}
+
+@keyframes blurer{
+    from {
+        filter: blur(15px);
+
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+p b{
+    color: rgb(255, 84, 112);
+}
+
+a{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    padding: 5px;
+}
+
+a:hover{
+    transform: scale(2);
+    background-color: rgb(74, 74, 74);
+}
